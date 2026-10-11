@@ -1,0 +1,31 @@
+/* One global moving image layer; section content stays above it. */
+.experience > section,.experience > .story-block,.experience > footer { position:relative; z-index:1; }
+.experience .hero,.experience .story-stage,.experience .content-universe,.experience .universe-breath,.experience .universe-metrics,.experience .comment-rain,.experience .rain-stage,.experience .download-closing { background:transparent; }
+.experience .background-reveal > .bg-gradient-to-b { opacity:.25; }
+.experience .hero-grain { opacity:.018; }
+.chapter-title { text-shadow:1px 0 16px #00f2ea22,-1px 0 16px #fe2c5522; }
+.experience .content-universe { margin-top:-100dvh; }
+.experience .universe-breath { height:30vh; height:30dvh; opacity:.22; overflow:hidden; }
+.experience.reduced .content-universe { margin-top:0; }
+.experience .universe-heading { padding-top:clamp(35px,5vh,70px); padding-bottom:clamp(40px,6vh,70px); }
+.experience .rain-breath { height:0; }
+.experience .download-breath { height:0; }
+.experience .download-content { padding-top:80px; padding-bottom:80px; }
+.experience .site-footer { margin-top:64px; }
+.phone-clickable { cursor:pointer; pointer-events:auto; }
+.phone-click-hint { position:absolute; bottom:-42px; left:50%; transform:translateX(-50%); white-space:nowrap; padding:7px 13px; border:1px solid #ffffff2b; border-radius:999px; background:#050505c9; font-size:11px; color:#ffffffcc; opacity:0; }
+.phone-clickable:hover .phone-click-hint,.phone-clickable:focus-visible .phone-click-hint { opacity:1; }
+.universe-card-motion { position:absolute; inset:0; isolation:isolate; border-radius:inherit; }
+.universe-explore { position:absolute; bottom:36px; right:30px; color:#ffffffb3; font-size:13px; opacity:0; }
+.universe-card:hover .universe-explore,.universe-card:focus-within .universe-explore { opacity:1; }
+.cinema-cursor { position:fixed; top:0; left:0; z-index:30; pointer-events:none; opacity:0; will-change:transform; }
+.cursor-dot { position:absolute; width:12px; height:12px; left:-6px; top:-6px; border-radius:50%; background:#00f2ea; }
+.cursor-halo { position:absolute; width:40px; height:40px; left:-20px; top:-20px; border-radius:50%; background:radial-gradient(circle,#fe2c553b,transparent 70%); }
+@media(hover:none),(pointer:coarse){.cinema-cursor{display:none;}.universe-explore{opacity:1;}}
+@media(max-width:767px){
+ .cinema-cursor{display:none;}
+ .experience .universe-metrics{padding-top:60px;padding-bottom:60px;}
+ .universe-explore{bottom:70px;left:22px;right:auto;font-size:11px;max-width:calc(100% - 44px);text-align:left;}
+ .experience .download-content{padding-top:55px;padding-bottom:55px;}
+}
+.split-char { display: inline-block; }

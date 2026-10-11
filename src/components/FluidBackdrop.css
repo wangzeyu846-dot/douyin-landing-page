@@ -1,0 +1,22 @@
+.fluid-backdrop{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:#050505;}
+.background-scene,.scene-effects,.scene-static,.scene-particles,.background-readability-mask{position:absolute;inset:0;}
+.background-scene{background:#050505;}
+.scene-effects{overflow:hidden;}
+.scene-fluid{position:absolute;inset:-25% -12%;transform:rotate(-8deg);}
+.background-readability-mask{background:rgba(0,0,0,.5);}
+.background-scene-probe{position:absolute;left:0;right:0;height:100dvh;pointer-events:none;visibility:hidden;}
+#background-hero{top:0;}#background-phone{top:100dvh;}
+.reduced #background-hero{display:none;}.reduced #background-phone{top:0;}
+/* Hero's content container is transparent so it shares the bounded scene system. */
+.experience .cinema-hero{background:transparent;}
+.scene-beam{position:absolute;left:-20%;width:140%;height:3px;background:linear-gradient(90deg,transparent,#7be6ff88,transparent);box-shadow:0 0 16px #00d9ed55;transform:rotate(-8deg);opacity:.12;}
+.scene-beam-0{top:32%;}.scene-beam-1{top:70%;}
+.scene-dapple{position:absolute;border-radius:50%;background:radial-gradient(circle,#a8e29b66,transparent 70%);opacity:.25;}
+.scene-corner{position:absolute;width:65vw;height:65vh;opacity:.25;}
+.scene-corner-rose{left:-20%;top:-20%;background:radial-gradient(ellipse,#fe2c55,transparent 65%);}
+.scene-corner-cyan{right:-20%;top:-20%;background:radial-gradient(ellipse,#00f2ea,transparent 65%);}
+.scene-corner-violet{left:-20%;bottom:-20%;background:radial-gradient(ellipse,#7c3aed,transparent 65%);}
+.scene-corner-orange{right:-20%;bottom:-20%;background:radial-gradient(ellipse,#fb923c,transparent 65%);}
+.impact-number{font-size:clamp(22px,2.7vw,54px);line-height:1.2;white-space:nowrap;font-variant-numeric:tabular-nums;}
+@media(max-width:767px){.impact-number{font-size:clamp(28px,8vw,48px);}.creator-data{padding-top:48px;}.creator-impact{min-height:auto;}.feature-matrix{min-height:auto;}.impact-metric{padding-left:18px;border-left:1px solid #ffffff26;}}
+@media(prefers-reduced-motion:reduce){.creator-story,.feature-matrix article{transform:none!important;}}

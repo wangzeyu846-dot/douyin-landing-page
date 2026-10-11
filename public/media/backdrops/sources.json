@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/media/backdrops/0.mp4",
+    "url": "https://videos.pexels.com/video-files/25396451/11900881_1280_720_24fps.mp4",
+    "duration": 12.0,
+    "bytes": 1580371
+  },
+  {
+    "path": "/media/backdrops/1.mp4",
+    "url": "https://videos.pexels.com/video-files/31936464/13603853_1280_720_24fps.mp4",
+    "duration": 12.0,
+    "bytes": 1458268
+  },
+  {
+    "path": "/media/backdrops/2.mp4",
+    "url": "https://videos.pexels.com/video-files/7206121/7206121-hd_1280_720_30fps.mp4",
+    "duration": 11.42,
+    "bytes": 1431545
+  },
+  {
+    "path": "/media/backdrops/3.mp4",
+    "url": "https://videos.pexels.com/video-files/25397823/11900899_1280_720_24fps.mp4",
+    "duration": 12.0,
+    "bytes": 1617314
+  },
+  {
+    "path": "/media/backdrops/4.mp4",
+    "url": "https://videos.pexels.com/video-files/4609478/4609478-hd_720_1280_30fps.mp4",
+    "duration": 7.83,
+    "bytes": 1101674
+  }
+]

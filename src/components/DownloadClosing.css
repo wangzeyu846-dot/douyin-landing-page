@@ -1,0 +1,34 @@
+.download-closing { position:relative; background:#050505; }
+.download-breath { height:100vh; height:100dvh; }
+.download-content { isolation:isolate; padding-top:50px; padding-bottom:50px; }
+.download-inner { min-height:380px; }
+.download-title { display:block!important; width:84%; font-size:clamp(60px,7.5vw,128px); line-height:1.15; letter-spacing:-.065em; }
+.download-title .mobile-heading-break { display:none; }
+.download-title .split-char:last-child { color:#fe2c55; }
+.download-details { display:grid; grid-template-columns:minmax(0,1fr) 180px; gap:48px; align-items:start; margin-top:44px; }
+.download-copy { padding-top:16px; }
+.download-subtitle { font-size:clamp(14px,1.15vw,18px); line-height:1.8; color:rgba(255,255,255,.6); white-space:nowrap; }
+.download-actions { margin-top:32px; }
+.download-qr-frame { width:180px; height:180px; padding:20px; background:#050505; border:1px solid #ffffff26; transform-origin:center; }
+.fake-qr { display:grid; grid-template-columns:repeat(21,1fr); width:100%; height:100%; padding:7px; background:#fff; }
+.fake-qr span { aspect-ratio:1; }
+.download-qr-caption { text-align:center; margin-top:18px; color:#ffffff80; font-size:12px; line-height:1.8; }
+.site-footer { margin-top:200px; background:#0a0a0a; border-top:1px solid rgba(255,255,255,.08); padding-top:72px; padding-bottom:30px; }
+.footer-links { gap:48px 32px; max-width:1440px; margin:0 auto; }
+.footer-links h3 { font-size:14px; font-weight:600; color:#fff; margin-bottom:24px; }
+.footer-links ul { list-style:none; padding:0; display:flex; flex-direction:column; gap:14px; }
+.footer-links a,.footer-pending { font-size:13px; color:rgba(255,255,255,.5); text-decoration:none; }
+.footer-links a:hover,.footer-links a:focus-visible,.footer-pending:hover { color:#fff; }
+.footer-pending { cursor:default; }
+.footer-legal { max-width:1440px; margin:72px auto 0; display:flex; justify-content:space-between; gap:20px; color:#ffffff66; font-size:11px; }
+@media(max-width:767px){
+ .download-title{width:84%;font-size:clamp(38px,10vw,68px);}
+ .download-title .mobile-heading-break{display:block;}
+ .download-details{grid-template-columns:1fr;gap:48px;margin-top:28px;}
+ .download-copy{padding-top:0;}
+ .download-subtitle{font-size:14px;white-space:normal;max-width:27em;}
+ .download-actions{flex-wrap:wrap;}
+ .download-qr-reveal{justify-self:end;margin-right:8%;}
+ .site-footer{padding-top:56px;}
+ .footer-legal{flex-direction:column;margin-top:56px;gap:12px;}
+}

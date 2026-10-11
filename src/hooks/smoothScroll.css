@@ -1,0 +1,2 @@
+/* Only overscroll physics change; native nested carousels keep their own snap. */
+html.lenis,html.lenis body{overscroll-behavior:none;}

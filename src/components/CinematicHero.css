@@ -1,0 +1,42 @@
+.experience .cinema-hero{position:relative;height:100dvh;min-height:0;padding:0;isolation:isolate;overflow:hidden;background:#050505;}
+.cinema-hero>.hero-navbar{position:absolute;top:24px;left:var(--spacing-gutter);right:var(--spacing-gutter);margin:0;z-index:5;}
+.cinema-copy{position:absolute;z-index:3;left:8%;right:6%;top:39%;}
+.cinema-copy .text-display{max-width:13em;}
+.cinema-copy .hero-subtitle{margin-top:24px;color:#ffffffb3;font-size:var(--text-lead);line-height:1.7;}
+.cinema-copy .hero-actions{margin-top:28px;}
+.cinema-device{position:absolute;left:0;top:0;z-index:2;width:min(320px,34dvh);}
+.cinema-device-focus{transform-origin:center;}
+.phone-ui,.phone-ui-reveal{position:absolute;inset:0;width:100%;height:100%;}
+.phone-ui-reveal{--wake-radius:0%;mask-image:radial-gradient(circle at 50% 50%,#000 0%,#000 var(--wake-radius),transparent calc(var(--wake-radius) + .5%));}
+.cinema-hero .phone-screen{background:#000;}
+.feed-arrival{position:absolute;left:8%;top:43%;z-index:3;max-width:42%;}
+.feed-arrival .chapter-title{font-size:clamp(48px,7vw,110px);}
+.feed-arrival small{display:block;color:#ffffff50;font-size:11px;margin-top:36px;}
+.feed-rail>button{display:flex;flex-direction:column;align-items:center;gap:1.5cqw;cursor:pointer;opacity:1;background:none;border:0;padding:0;}
+.feed-rail>button:focus-visible{outline:1px solid #00f2ea;outline-offset:4px;border-radius:4px;}
+.feed-rail>button small{color:white;}
+.cinema-static .cinema-copy{display:none;}
+.cinema-static .cinema-device{left:65%;top:50%;transform:translate(-50%,-50%);}
+.cinema-static .feed-arrival{visibility:visible;opacity:1;}
+@media(max-width:767px){
+ .cinema-hero>.hero-navbar{top:16px;}.cinema-copy{left:6%;right:5%;top:30%;}.cinema-copy .text-display{font-size:clamp(34px,10.5vw,46px);}.cinema-copy .hero-subtitle{font-size:14px;margin-top:20px;}.cinema-copy .hero-actions{margin-top:20px;}
+ .feed-arrival{left:6%;top:21%;max-width:88%;}.feed-arrival .chapter-title{font-size:48px;}.feed-arrival .chapter-copy{margin-top:12px;}.feed-arrival small{margin-top:16px;}
+ .cinema-static .cinema-device{width:min(220px,29dvh);left:50%;top:65%;}
+}
+@media(max-height:600px) and (min-width:768px){.cinema-copy{top:30%;}.cinema-copy .text-display{font-size:clamp(38px,6vw,72px);}.cinema-copy .hero-subtitle{margin-top:14px;}.cinema-copy .hero-actions{margin-top:16px;}}
+
+.cinema-hero:not(.cinema-static) .feed-arrival{visibility:hidden;}
+.cinema-hero:not(.cinema-static) .cinema-device{visibility:hidden;}
+/* Text does not block the sleeping phone's hover; CTA controls remain clickable. */
+.cinema-copy{pointer-events:none;}.cinema-copy a,.cinema-copy button{pointer-events:auto;}
+
+.cinema-device .phone-shell{background:#08090b;border:1px solid #4a4c51;box-shadow:-7px 0 32px #00f2ea28,9px 4px 38px #fe2c5530,0 25px 65px #000b,inset 0 0 0 2px #000;}
+
+.cinema-device{width:min(320px,38dvh);}
+.cinema-hero[data-awake="false"] .interactive-feed .feed-rail,.cinema-hero[data-awake="false"] .interactive-feed .feed-bottom{visibility:hidden;pointer-events:none;}
+
+.cinema-device .phone-status,.cinema-device .phone-notch,.cinema-device .home-indicator{pointer-events:none;}
+/* Crisp WebGL atmosphere; no photographic backdrop or frosted layers. */
+.cinema-hero>.hero-navbar{backdrop-filter:none;-webkit-backdrop-filter:none;}
+.cinema-hero .chapter-title,.cinema-hero .text-display{text-shadow:none;filter:none;}
+.cinema-hero[data-awake="false"] .interactive-feed{cursor:default;}

@@ -1,0 +1,26 @@
+/* Natural document flow: neither carousel adds a pin spacer or moves with page scroll. */
+.experience .story-block,.experience.reduced .story-block{min-height:0;}
+.hero .hero-device-layer{position:absolute;inset:0;pointer-events:none;}
+.hero .hero-device-layer .shared-device{pointer-events:auto;}
+.experience .discovery-stage{height:100vh;height:100dvh;min-height:0;}
+.experience .story-carousel{position:absolute;inset:110px 0 45px;height:auto;opacity:1;visibility:visible;margin:0;}
+.experience .story-carousel-interaction{inset:0 0 45px;max-height:none;}
+.experience .content-universe,.experience.reduced .content-universe{margin-top:0;}
+.experience .universe-rail-shell,.experience .universe-static .universe-rail-shell{min-height:0;}
+.experience .universe-rail-stage,.experience .universe-static .universe-rail-stage{height:auto;min-height:80vh;min-height:80dvh;overflow:visible;padding:0;}
+.experience .universe-track,.experience .universe-static .universe-track{position:relative;top:auto;left:auto;width:100%;display:flex;flex-direction:row;gap:28px;overflow-x:auto;overflow-y:hidden;padding:24px var(--spacing-gutter);scroll-snap-type:x mandatory;scroll-padding-inline:var(--spacing-gutter);scrollbar-width:none;touch-action:pan-y;cursor:grab;will-change:auto;}
+.universe-track::-webkit-scrollbar{display:none;}
+.experience .universe-track[data-dragging="true"]{cursor:grabbing;}
+.experience .universe-card,.experience .universe-static .universe-card{width:clamp(280px,42vw,620px);height:62vh;height:62dvh;scroll-snap-align:start;flex:none;}
+.experience .universe-card h3{font-size:clamp(120px,15vw,240px);}
+.experience .universe-progress{position:relative;left:auto;right:auto;bottom:auto;margin:20px var(--spacing-gutter) 35px;}
+@media(max-width:767px){
+ .experience .story-carousel{inset:100px 0 40px;}
+ .experience .universe-card,.experience .universe-static .universe-card{width:80vw;height:60vh;height:60dvh;}
+ .experience .universe-card h3{font-size:clamp(100px,30vw,160px);}
+ .experience .universe-track{gap:20px;}
+}
+
+/* Accordion replaces the depth carousel; mobile panels remain in document flow. */
+.experience .story-carousel-interaction{position:relative;inset:auto;}
+@media(max-width:767px){.experience .discovery-stage{height:auto;min-height:100dvh;}.experience .story-carousel{position:relative;inset:auto;height:auto;}.experience .story-carousel-interaction{inset:auto;}}
