@@ -89,7 +89,7 @@ export default function InteractiveFeed({reducedMotion}:{reducedMotion:boolean})
   if(!paused&&!held.current&&nav==='首页')g.follow?.(gsap.utils.clamp(-50,50,g.delta*.5));
  };
  const like=(force=false)=>{if(nav==='朋友')setFriendLiked(v=>force||!v);else setLiked(values=>values.map((v,i)=>i===current?(force||!v):v));const icon=root.current?.querySelector('[aria-label="点赞"] svg');if(icon)bounce(icon,1.5);};
- const share=async()=>{let message='链接已复制';try{await navigator.clipboard.writeText(`${location.origin}/#features`);}catch{message='复制失败，请稍后重试';}if(alive.current){setMode(null);notify(message);}};
+ const share=async()=>{let message='链接已复制';try{await navigator.clipboard.writeText(`${location.origin}${import.meta.env.BASE_URL}#feature-matrix`);}catch{message='复制失败，请稍后重试';}if(alive.current){setMode(null);notify(message);}};
  const post=posts[current];
  const isFeed=nav==='首页'||nav==='朋友';
  const changePage=(page:string)=>{endGesture(true);suppressTap.current=false;window.clearTimeout(tapTimer.current);window.clearTimeout(holdTimer.current);setMode(null);setCapture(false);setPaused(false);setNav(page);if(page==='朋友')setFriendLiked(false);setTab(page==='朋友'?'关注':'推荐');};

@@ -10,7 +10,7 @@ export const videoLibrary = {
       "duration": 8.16,
       "resolution": "1280x720",
       "action": "极光流动",
-      "poster": "/media/posters/depth-0.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/depth-0.jpg`
     },
     {
       "id": 7586497,
@@ -20,7 +20,7 @@ export const videoLibrary = {
       "duration": 8.3,
       "resolution": "1280x720",
       "action": "麦克风录音与手势",
-      "poster": "/media/posters/depth-1.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/depth-1.jpg`
     },
     {
       "id": 31187643,
@@ -30,7 +30,7 @@ export const videoLibrary = {
       "duration": 8.31,
       "resolution": "1280x720",
       "action": "翻炒与炉火",
-      "poster": "/media/posters/depth-2.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/depth-2.jpg`
     },
     {
       "id": 7681053,
@@ -40,7 +40,7 @@ export const videoLibrary = {
       "duration": 10.64,
       "resolution": "1280x720",
       "action": "猫咪扑跳逗猫棒",
-      "poster": "/media/posters/depth-4.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/depth-4.jpg`
     },
     {
       "id": 7722223,
@@ -50,7 +50,7 @@ export const videoLibrary = {
       "duration": 8.2,
       "resolution": "720x1280",
       "action": "人群挥手与舞台光束",
-      "poster": "/media/posters/depth-6.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/depth-6.jpg`
     }
   ],
   "universe": [
@@ -62,7 +62,7 @@ export const videoLibrary = {
       "duration": 18.18,
       "resolution": "1280x720",
       "action": "课堂写字",
-      "poster": "/media/posters/universe-0.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/universe-0.jpg`
     },
     {
       "id": 7008582,
@@ -72,7 +72,7 @@ export const videoLibrary = {
       "duration": 11.44,
       "resolution": "720x1280",
       "action": "厨师摆盘",
-      "poster": "/media/posters/universe-1.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/universe-1.jpg`
     },
     {
       "id": 5382746,
@@ -82,7 +82,7 @@ export const videoLibrary = {
       "duration": 8.97,
       "resolution": "720x1280",
       "action": "海边日落延时",
-      "poster": "/media/posters/universe-2.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/universe-2.jpg`
     },
     {
       "id": 11839819,
@@ -92,7 +92,7 @@ export const videoLibrary = {
       "duration": 8.77,
       "resolution": "1280x720",
       "action": "夜街行人",
-      "poster": "/media/posters/universe-3.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/universe-3.jpg`
     },
     {
       "id": 4651948,
@@ -102,7 +102,7 @@ export const videoLibrary = {
       "duration": 10.47,
       "resolution": "1280x720",
       "action": "狗狗追球",
-      "poster": "/media/posters/universe-4.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/universe-4.jpg`
     },
     {
       "id": 6466100,
@@ -112,7 +112,7 @@ export const videoLibrary = {
       "duration": 10.0,
       "resolution": "1280x720",
       "action": "发光电路",
-      "poster": "/media/posters/universe-5.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/universe-5.jpg`
     },
     {
       "id": 34901407,
@@ -122,7 +122,7 @@ export const videoLibrary = {
       "duration": 13.76,
       "resolution": "720x1280",
       "action": "健身举铁",
-      "poster": "/media/posters/universe-6.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/universe-6.jpg`
     },
     {
       "id": 4090467,
@@ -132,7 +132,7 @@ export const videoLibrary = {
       "duration": 12.92,
       "resolution": "720x1280",
       "action": "钢琴手指特写",
-      "poster": "/media/posters/universe-7.jpg"
+      "poster": `${import.meta.env.BASE_URL}media/posters/universe-7.jpg`
     }
   ]
 } as const;
